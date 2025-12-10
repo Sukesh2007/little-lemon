@@ -125,7 +125,7 @@ fun OnBoarding(sharedPreferences: SharedPreferences, navController: NavHostContr
                 onValueChange = {it-> firstName = it},
                 modifier = Modifier.padding(horizontal = 10.dp, vertical = 5.dp).fillMaxWidth()
                     .clip(RoundedCornerShape(8.dp)),
-                colors = TextFieldDefaults.colors(Color.White)
+
             )
             Text(
                 text= "Last Name",
@@ -138,7 +138,7 @@ fun OnBoarding(sharedPreferences: SharedPreferences, navController: NavHostContr
                 onValueChange = {it-> lastName = it},
                 modifier = Modifier.padding(horizontal = 10.dp, vertical = 5.dp).fillMaxWidth()
                     .clip(RoundedCornerShape(8.dp)),
-                colors = TextFieldDefaults.colors(Color.White)
+
             )
             Text(
                 text= "Email",
@@ -151,7 +151,6 @@ fun OnBoarding(sharedPreferences: SharedPreferences, navController: NavHostContr
                 onValueChange = {it-> email = it},
                 modifier = Modifier.padding(horizontal = 10.dp, vertical = 5.dp).fillMaxWidth()
                     .clip(RoundedCornerShape(8.dp)).border(width = 0.8.dp, color = Color.Gray),
-                colors = TextFieldDefaults.colors(Color.White),
                 keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Email)
             )
             AnimatedVisibility(

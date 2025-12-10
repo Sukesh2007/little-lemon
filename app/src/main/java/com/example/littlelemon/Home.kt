@@ -210,7 +210,7 @@ fun MiddlePanel(paddingValues: PaddingValues, onType: (String) -> Unit, value: S
         Text(text = "Little Lemon",
             color = Color(0XFFF5CE14),
             fontWeight = FontWeight.Bold,
-            fontSize = 35.sp,
+            fontSize = 42.sp,
             modifier = Modifier.padding(start = 5.dp)
         )
         Row(modifier = Modifier.fillMaxWidth().padding(start = 5.dp, top = 12.dp)){
