@@ -96,7 +96,7 @@ fun Profile(sharedPreferences: SharedPreferences, navController: NavHostControll
             )
             Box(modifier = Modifier.padding(vertical = 20.dp).clip(RoundedCornerShape(45.dp)).size(90.dp)) {
                 Image(
-                    painter = painterResource(R.drawable.img),
+                    painter = painterResource(R.drawable.profile),
                     contentDescription = "Profile photo",
                     contentScale = ContentScale.Crop,
                 )

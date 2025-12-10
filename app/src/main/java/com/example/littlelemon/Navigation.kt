@@ -2,6 +2,7 @@ package com.example.littlelemon
 
 import android.content.SharedPreferences
 import androidx.compose.runtime.Composable
+import androidx.lifecycle.MutableLiveData
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
@@ -18,7 +19,7 @@ fun Navigation(sharedPreferences: SharedPreferences){
     val navController = rememberNavController()
     NavHost(navController = navController, startDestination = start){
         composable(Home.route){
-            Home(sharedPreferences, navController)
+            Home( navController)
         }
         composable(OnBoarding.route){
             OnBoarding(sharedPreferences, navController)

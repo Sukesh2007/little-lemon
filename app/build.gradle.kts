@@ -2,6 +2,8 @@ plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
     alias(libs.plugins.kotlin.compose)
+    id("org.jetbrains.kotlin.plugin.serialization")
+    id("com.google.devtools.ksp")
 }
 
 android {
@@ -56,5 +58,16 @@ dependencies {
     androidTestImplementation(libs.androidx.ui.test.junit4)
     debugImplementation(libs.androidx.ui.tooling)
     debugImplementation(libs.androidx.ui.test.manifest)
-    implementation("androidx.navigation:navigation-compose:2.9.5")
+    implementation("com.github.bumptech.glide:compose:1.0.0-alpha.1")
+    implementation("androidx.navigation:navigation-compose:2.9.6")
+    implementation("io.ktor:ktor-client-android:3.2.1")
+    implementation("io.ktor:ktor-client-content-negotiation:3.2.1")
+    implementation("io.ktor:ktor-serialization-kotlinx-json:3.2.1")
+    implementation("androidx.compose.runtime:runtime-livedata:1.10.0")
+    implementation("androidx.room:room-runtime:2.8.4")
+    implementation("androidx.room:room-ktx:2.8.4")
+    ksp("androidx.room:room-compiler:2.8.4")
+    implementation("androidx.compose.material:material-icons-extended:1.6.7")
+
+
 }
